@@ -1,8 +1,7 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from "react";
+import { Linking } from "react-native";
 
-import { Container } from './styles';
-
-import { Linking } from 'react-native';
+import { Container } from './styles'
 
 type Props = {
     text: ReactNode
@@ -10,9 +9,9 @@ type Props = {
 }
 
 export function CardBlog({ link, text }: Props) {
-    return (
-        <Container onPress={() => Linking.openURL}>
-           {text} 
+    return(
+        <Container onPress={() => Linking.openURL(link)}>
+            {text}
         </Container>
-    );
+    )
 }

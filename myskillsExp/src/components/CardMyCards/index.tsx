@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import { Container, TextCard } from './styles';
+import { Container, TextCard } from './styles'
 
-import Ionicons from  '@expo/vector-icons/Ionicons'
+import { Ionicons } from '@expo/vector-icons'
 
 export function CardMyCards() {
-    return (
+    return(
         <Container>
-            <Ionicons name='card-outline' size={20} color="#000" />
-            <TextCard>Meus cartões</TextCard>
+            <Ionicons name="card" size={20} color="#000" />
+            <TextCard>Meus cartões                                                                          3</TextCard>
         </Container>
     )
 }
