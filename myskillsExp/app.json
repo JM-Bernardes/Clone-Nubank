@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "myskillsExp",
+    "slug": "myskillsExp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
