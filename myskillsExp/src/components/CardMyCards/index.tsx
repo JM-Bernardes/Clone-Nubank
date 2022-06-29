@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container, TextCard } from './styles';
 
-import { Ionicons } from  '@expo/vector-icons/Ionicons'
+import Ionicons from  '@expo/vector-icons/Ionicons'
 
 export function CardMyCards() {
     return (

@@ -60,12 +60,12 @@ export function Header() {
                     <Ionicons nome='cash-outline' size={25} color="#000" />
                 </OptionsIcon>
 
-                <OptionText>Área Pix</OptionText>
+                <OptionText>Pix</OptionText>
                 </OptionView>
 
                 <OptionView>
                 <OptionsIcon>
-                    <Ionicons nome='cash-outline' size={25} color="#000" />
+                    <Ionicons nome='barcode-outline' size={25} color="#000" />
                 </OptionsIcon>
 
                 <OptionText>Pagar</OptionText>
@@ -89,7 +89,7 @@ export function Header() {
 
                 <OptionView>
                 <OptionsIcon>
-                    <Ionicons nome='cash-outline' size={25} color="#000" />
+                    <Ionicons nome='phone-portrait-outline' size={25} color="#000" />
                 </OptionsIcon>
 
                 <OptionText>Recarga de celular</OptionText>
@@ -105,7 +105,7 @@ export function Header() {
 
                 <OptionView>
                 <OptionsIcon>
-                    <Ionicons nome='cash-outline' size={25} color="#000" />
+                    <Ionicons nome='heart-outline' size={25} color="#000" />
                 </OptionsIcon>
 
                 <OptionText>Doação</OptionText>

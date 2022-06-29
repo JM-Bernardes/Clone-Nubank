@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 
 import { Container } from './styles';
 
-import { Linking } from 'react-native'
+import { Linking } from 'react-native';
 
 type Props = {
     text: ReactNode

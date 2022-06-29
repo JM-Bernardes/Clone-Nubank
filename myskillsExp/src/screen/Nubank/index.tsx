@@ -7,7 +7,7 @@ import { StyleSheet, ScrollView, Text, Touchable } from 'react-native'
 
 import { Container, CardMyCardsView, CardBlogView, CardBlogItem, CardFunction, CardFunctionRow } from './styles';
 
-import Ionicons  from '@expo/vector-icons/Ionicons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 export function Nubank() {
     return (
@@ -25,26 +25,18 @@ export function Nubank() {
                         showsHorizontalScrollIndicator={false}
                     >
                         <CardBlogItem>
-                        <CardBlog link='http://www.google.com/' 
+                        <CardBlog link='http://nubank.com.br/emprestimo/' 
                         text={
-                            <Text style={styles.textBlack}>Conheça Nubank vida: Seguro e simples 
-                                <Text style={styles.textPurple}>cabe no seu bolso</Text>
+                            <Text style={styles.textBlack}>Você tem R$ 5.000,00 disponíveis para
+                                <Text style={styles.textPurple}>empréstimo</Text>.
                             </Text>}/>
                         </CardBlogItem>
 
                         <CardBlogItem>
-                        <CardBlog link='http://www.google.com/' 
+                        <CardBlog link='http://nubank.com.br/seguros/' 
                         text={
                             <Text style={styles.textBlack}>Conheça Nubank vida: Seguro e simples 
-                            <Text style={styles.textPurple}>cabe no seu bolso</Text>
-                            </Text>}/>
-                        </CardBlogItem>
-
-                        <CardBlogItem>
-                        <CardBlog link='http://www.google.com/' 
-                        text={
-                            <Text style={styles.textBlack}>Conheça Nubank vida: Seguro e simples 
-                            <Text style={styles.textPurple}>cabe no seu bolso</Text>
+                            <Text style={styles.textPurple}>cabe no seu bolso</Text>.
                             </Text>}/>
                         </CardBlogItem>
                     </ScrollView>
