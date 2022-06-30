@@ -24,6 +24,7 @@ export function Login() {
                     style={styles.input}
                     secureTextEntry={true}
                     placeholder="Senha"
+                    keyboardType="numeric"
                 />
             
 
