@@ -9,7 +9,7 @@ import { Ionicons } from '@expo/vector-icons'
 
 import { Container, CardMyCardsView, CardFunctionRow, CardBlogView, CardBlogItem, CardFunction, BorderTopFunction } from './styles'
 
-export function Nubank() {
+export const Nubank = () => {
     return(
         <Container>
             <Header />
@@ -82,3 +82,4 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     }
 })
+

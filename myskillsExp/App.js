@@ -1,12 +1,11 @@
 import React from 'react';
-import { TextInput } from 'react-native';
-import { Login } from './src/screens/Login';
-import { Nubank } from './src/screens\\/Nubank';
+import { Header } from './src/components/Header';
+import { Nubank } from './src/screens/Nubank';
+import { Routes } from './src/screens/Routes/routes';
 
 const App = () => {
   return (
-    <Login />,
-    <Nubank/>
+    <Routes />
     
   )
 }

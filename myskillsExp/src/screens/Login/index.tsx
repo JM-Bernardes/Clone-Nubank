@@ -1,33 +1,50 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { Text, StyleSheet, View, Image, TextInput, TouchableOpacity } from 'react-native';
+import { Nubank } from "../Nubank";
 
 export function Login() {
+    const navigation = useNavigation()
+
     return(
+
         <View style={styles.container}>
+            
 
             <Image
                 source={require('../../assets/img/Logo.png')}
                 style={styles.logo}
             />
+                <TextInput
+                    style={styles.input}
+                    placeholder="CPF" 
+                />
 
-            <TextInput
-                style={styles.input}
-                placeholder="Digite seu email, telefone ou CPF"
-            />
-
-            <TextInput
-                style={styles.input}
-                secureTextEntry={true}
-                placeholder="Senha"
-            />
+                <TextInput
+                    style={styles.input}
+                    secureTextEntry={true}
+                    placeholder="Senha"
+                />
+            
 
             <TouchableOpacity
                 style={styles.botton}
-                onPress={ () => {this.click()}}
+                onPress={ () => navigation.navigate('Nubank')}
             >
                 <Text style={styles.bottonText}>Login</Text>
             </TouchableOpacity>
 
+            <TouchableOpacity
+                style={styles.botton2}
+            >
+                <Text style={styles.textPurple}>Esqueci minha senha</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+                style={styles.botton2}
+            >
+                <Text style={styles.textPurple}>Ainda não sou cliente</Text>
+            </TouchableOpacity>
 
         </View>
     )
@@ -43,7 +60,8 @@ const styles = StyleSheet.create({
     logo: {
         width: 150,
         height: 150,
-        borderRadius: 100
+        borderRadius: 100,
+        marginLeft: 9
     },
     input: {
         marginTop: 10,
@@ -67,6 +85,20 @@ const styles = StyleSheet.create({
     bottonText: {
         fontSize: 16,
         fontWeight: 'bold',
-        color: '#66cc9c66c'
+        color: '#000'
+    },
+    textPurple: {
+        color: '#fff',
+        fontSize: 12,
+        alignItems: 'center',
+        marginTop: 8
+    },
+    botton2: {
+        width: 120,
+        height: 42,
+        marginTop: 0,
+        borderRadius: 4,
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 })
